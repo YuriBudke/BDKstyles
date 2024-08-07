@@ -1,0 +1,19 @@
+<div class="catalog-container">
+  <header>
+    <img src="assets/LOGO.png" alt="Logo da Loja" class="logo">
+    <h1>BDK Styles</h1>
+  </header>
+  <h2>Produtos</h2>
+  <div class="grid-itens">
+     <div *ngFor="let product of products" class="product-card">
+    <img [src]="product.imageUrl" (click)="selectProduct(product.id)" alt="{{ product.name }}" class="product-image">
+    <h3 (click)="selectProduct(product.id)" class="product-name">{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p>Preço: {{ product.price | currency }}</p>
+  </div>
+</div>
+ 
+  <footer>
+    <p>&copy; 2024 BDK Styles</p>
+  </footer>
+</div>

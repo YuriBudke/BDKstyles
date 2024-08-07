@@ -1,0 +1,24 @@
+<div *ngIf="product" class="product-details-container">
+    <h2>{{ product.name }}</h2>
+    <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+    <img [src]="product.imageUrl2" alt="{{ product.name }}" class="product-image">
+    <p>{{ product.description }}</p>
+    <p>Preço: {{ product.price | currency }}</p>
+  
+    <label>
+      Tamanho:
+      <select>
+        <option *ngFor="let size of product.sizes">{{ size }}</option>
+      </select>
+    </label>
+  
+    <label>
+      Cor:
+      <select>
+        <option *ngFor="let color of product.colors">{{ color }}</option>
+      </select>
+    </label>
+  
+    <button (click)="addToCart()">Adicionar ao Carrinho</button>
+    <button (click)="buyNow()">Comprar Agora</button>
+  </div>

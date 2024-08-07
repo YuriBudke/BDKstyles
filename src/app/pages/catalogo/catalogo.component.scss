@@ -1,0 +1,54 @@
+.catalog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #ccc;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  header .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .grid-itens{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .product-image {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .product-name {
+    cursor: pointer;
+    color: #333;
+  }
+  
+  footer {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+  }
