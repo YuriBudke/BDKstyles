@@ -62,7 +62,25 @@ export class CatalogoComponent {
       price: 200.00,
       sizes: ['38', '40', '42', '44'],
       colors: ['Azul', 'Preto']
-    }
+    },
+    {
+      id: 6,
+      name: 'CALÇA CARGO',
+      imageUrl: 'https://images.tcdn.com.br/img/img_prod/735068/calca_cargo_koloni_ripstop_khaki_2849_1_e49c102e8357000657ba0e6ed02f07eb.jpeg',
+      description: 'Calça no estilo cargo',
+      price: 150.00,
+      sizes: ['38', '40', '42', '44'],
+      colors: ['Bege', 'Preto']
+    },
+    {
+      id: 7,
+      name: 'CASACO CAPTIVE',
+      imageUrl: 'https://images.tcdn.com.br/img/img_prod/680475/moletom_captive_mente_fertil_cloud_15214_1_6de102c21dba10203580a81ee69343cc.png',
+      description: 'Casaco de alta qualidade, MC Kevin',
+      price: 340.00,
+      sizes: ['P', 'M', 'G', 'GG'],
+      colors: ['Preto', 'Branco', 'Cinza']
+    },
   ];
 
   constructor(private router: Router) {}

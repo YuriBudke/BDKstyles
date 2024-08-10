@@ -65,10 +65,40 @@ export class ProductDetailsComponent implements OnInit {
       imageUrl: 'https://static.cdnlive.com.br/uploads/707/unidade/17074008516331_zoom.jpg',
       imageUrl2: 'https://static.cdnlive.com.br/uploads/707/produto/17074008482520_zoom.jpg',
       description: 'Calça cargo da marca Chronic',
-      price: 89.99,
+      price: 200.00,
       sizes: ['38', '40', '42', '44'],
       colors: ['Azul', 'Preto']
-    }
+    },
+    {
+      id: 6,
+      name: 'CALÇA CHRONIC',
+      imageUrl: 'https://images.tcdn.com.br/img/img_prod/735068/calca_cargo_koloni_ripstop_khaki_2849_1_e49c102e8357000657ba0e6ed02f07eb.jpeg',
+      imageUrl2: 'https://images.tcdn.com.br/img/img_prod/735068/calca_cargo_koloni_ripstop_khaki_2849_2_cc8b497c012c1dde067117b020d44a8c.jpeg',
+      description: 'Calça cargo da marca Chronic',
+      price: 150.00,
+      sizes: ['38', '40', '42', '44'],
+      colors: ['Bege', 'Preto']
+    },
+    {
+      id: 7,
+      name: 'CASACO CAPTIVE',
+      imageUrl: 'https://images.tcdn.com.br/img/img_prod/680475/moletom_captive_mente_fertil_cloud_15214_2_94fd1ce5baa24feb285b764a6e83e2b0.png',
+      imageUrl2: 'https://images.tcdn.com.br/img/img_prod/680475/moletom_captive_mente_fertil_cloud_15214_1_6de102c21dba10203580a81ee69343cc.png',
+      description: 'Casaco do MC Kevin com a frase: a mente é fertil pra sonhar não tem limite',
+      price: 340.00,
+      sizes: ['P', 'M', 'G', 'GG'],
+      colors: ['Preto', 'Branco', 'Cinza']
+    },
+    {
+      id: 8,
+      name: 'CASACO CAPTIVE',
+      imageUrl: 'https://images.tcdn.com.br/img/img_prod/680475/moletom_captive_mente_fertil_cloud_15214_2_94fd1ce5baa24feb285b764a6e83e2b0.png',
+      imageUrl2: 'https://images.tcdn.com.br/img/img_prod/680475/moletom_captive_mente_fertil_cloud_15214_1_6de102c21dba10203580a81ee69343cc.png',
+      description: 'Casaco do MC Kevin com a frase: a mente é fertil pra sonhar não tem limite',
+      price: 340.00,
+      sizes: ['P', 'M', 'G', 'GG'],
+      colors: ['Preto', 'Branco', 'Cinza']
+    },
   ];
   
   product: Product | undefined;
