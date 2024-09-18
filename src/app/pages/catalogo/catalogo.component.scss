@@ -53,3 +53,16 @@
     color: #ccc;
     text-align: center;
   }
+  .catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .login-link {
+    text-decoration: none;
+    color: #000; /* Altere a cor conforme necessário */
+    font-weight: bold;
+    margin-right: 20px; /* Ajuste conforme necessário */
+  }

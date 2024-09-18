@@ -76,11 +76,21 @@ export class CatalogoComponent {
       id: 7,
       name: 'CASACO CAPTIVE',
       imageUrl: 'https://images.tcdn.com.br/img/img_prod/680475/moletom_captive_mente_fertil_cloud_15214_1_6de102c21dba10203580a81ee69343cc.png',
-      description: 'Casaco de alta qualidade, MC Kevin',
+      description: 'Casaco de alta qualidade - MC Kevin',
       price: 340.00,
       sizes: ['P', 'M', 'G', 'GG'],
       colors: ['Preto', 'Branco', 'Cinza']
     },
+    {
+      id: 8,
+      name: 'CASACO SUFGANG',
+      imageUrl: 'https://princeofstreets.fbitsstatic.net/img/p/moletom-sufgang-joker-arabic-preto-152116/343802-1.jpg?w=550&h=550&v=no-change&qs=ignore',
+      description: 'Casaco de alta qualidade - Chronic',
+      price: 350.00,
+      sizes: ['P', 'M', 'G', 'GG'],
+      colors: ['Preto', 'Branco', 'Cinza']
+    }
+    
   ];
 
   constructor(private router: Router) {}

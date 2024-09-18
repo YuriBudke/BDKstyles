@@ -7,6 +7,10 @@ import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
+import { CadUsuarioComponent } from './cad-usuario/cad-usuario.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { LoginComponent } from './pages/login/login.component';
     CatalogoComponent,
     ProductDetailsComponent,
     CartComponent,
-    LoginComponent
+    LoginComponent,
+    MenuComponent,
+    HomeComponent,
+    CadUsuarioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

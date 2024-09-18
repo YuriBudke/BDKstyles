@@ -91,11 +91,11 @@ export class ProductDetailsComponent implements OnInit {
     },
     {
       id: 8,
-      name: 'CASACO CAPTIVE',
-      imageUrl: 'https://images.tcdn.com.br/img/img_prod/680475/moletom_captive_mente_fertil_cloud_15214_2_94fd1ce5baa24feb285b764a6e83e2b0.png',
-      imageUrl2: 'https://images.tcdn.com.br/img/img_prod/680475/moletom_captive_mente_fertil_cloud_15214_1_6de102c21dba10203580a81ee69343cc.png',
+      name: 'CASACO CUSGANG',
+      imageUrl: 'https://princeofstreets.fbitsstatic.net/img/p/moletom-sufgang-joker-arabic-preto-152116/343802-1.jpg?w=550&h=550&v=no-change&qs=ignore',
+      imageUrl2: 'https://princeofstreets.fbitsstatic.net/img/p/moletom-sufgang-joker-arabic-preto-152116/343802.jpg?w=550&h=550&v=no-change&qs=ignore',
       description: 'Casaco do MC Kevin com a frase: a mente é fertil pra sonhar não tem limite',
-      price: 340.00,
+      price: 350.00,
       sizes: ['P', 'M', 'G', 'GG'],
       colors: ['Preto', 'Branco', 'Cinza']
     },
