@@ -11,6 +11,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { CadUsuarioComponent } from './cad-usuario/cad-usuario.component';
+import { ProdutoComponent } from './produto/produto.component';
+import { MovprodutoComponent } from './movproduto/movproduto.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CadUsuarioComponent } from './cad-usuario/cad-usuario.component';
     LoginComponent,
     MenuComponent,
     HomeComponent,
-    CadUsuarioComponent
+    CadUsuarioComponent,
+    ProdutoComponent,
+    MovprodutoComponent
   ],
   imports: [
     BrowserModule,
