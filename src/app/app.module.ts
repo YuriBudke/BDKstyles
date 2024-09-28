@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { CadUsuarioComponent } from './cad-usuario/cad-usuario.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { MovprodutoComponent } from './movproduto/movproduto.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { MovprodutoComponent } from './movproduto/movproduto.component';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [provideHttpClient(),],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
