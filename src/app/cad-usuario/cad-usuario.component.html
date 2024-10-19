@@ -6,39 +6,40 @@
     <h2 class="mt-4">Cadastro de Usuário</h2>
   
     <!-- Formulário de Cadastro de Usuário -->
-    <form class="mt-4">
+    <form class="mt-4" [formGroup]="formulario">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="nome">Nome</label>
-          <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+          <input formControlName="nome" type="text" class="form-control" id="nome" placeholder="Digite o nome">
         </div>
         <div class="form-group col-md-6">
           <label for="sobrenome">Sobrenome</label>
-          <input type="text" class="form-control" id="sobrenome" placeholder="Digite o sobrenome">
+          <input formControlName="sobrenome" type="text" class="form-control" id="sobrenome" placeholder="Digite o sobrenome">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="telefone">Telefone</label>
-          <input type="text" class="form-control" id="telefone" placeholder="Digite o telefone">
+          <input formControlName="telefone" type="text" class="form-control" id="telefone" placeholder="Digite o telefone">
         </div>
         <div class="form-group col-md-6">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Digite o email">
+          <input formControlName="email" type="email" class="form-control" id="email" placeholder="Digite o email">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="tipo">Tipo</label>
-          <select id="tipo" class="form-control">
+          <select formControlName="tipo" id="tipo" class="form-control">
             <option selected>Escolher...</option>
-            <option value="admin">Admin</option>
-            <option value="usuario">Usuário</option>
+            <option *ngFor="let tipo of arrTipos" [value]="tipo.id_tipo">{{tipo.descricao}}</option>
           </select>
         </div>
       </div>
   
       <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+      <button (click)="onSave()">Save</button>
+      <button (click)="onCancelar()">Cancel</button>
     </form>
   
     <!-- Relatório em formato de tabela -->
